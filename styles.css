@@ -209,3 +209,11 @@ h1 {
   grid-area: main;
   background-color: aliceblue;
 }
+
+.card-options img {
+  height: 1rem;
+}
+
+.trending-card img {
+  height: 3rem;
+}
