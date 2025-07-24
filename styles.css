@@ -208,12 +208,53 @@ h1 {
 #main {
   grid-area: main;
   background-color: aliceblue;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "projects announcements"
+    "projects trending";
+}
+
+#project-container {
+  grid-area: projects;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3rem 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+#project-container h2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .card-options img {
   height: 1rem;
 }
 
+#announcement-container {
+  grid-area: announcements;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3rem 1fr;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+#trending-container {
+  grid-area: trending;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3rem 1fr;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.trending-card {
+  display: flex;
+}
 .trending-card img {
   height: 3rem;
 }
