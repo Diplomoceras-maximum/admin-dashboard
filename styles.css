@@ -1,3 +1,5 @@
+/* General Styling */
+
 * {
   padding: 0;
   margin: 0;
@@ -20,6 +22,8 @@
   grid-template-rows: 150px 1fr;
   height: 100vh;
 }
+
+/* Sidebar Styling*/
 
 #sidebar {
   grid-row: 1 / 3;
@@ -85,6 +89,8 @@
   margin-right: 0.5rem;
   filter: invert(100%);
 }
+
+/* Header Styling */
 
 #header {
   grid-row: 1 / 2;
@@ -200,6 +206,8 @@
   color: var(--navlink-colour);
   cursor: pointer;
 }
+
+/* Main Styling */
 
 #main {
   grid-row: 2 / 3;
