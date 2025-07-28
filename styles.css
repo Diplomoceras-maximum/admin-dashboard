@@ -86,7 +86,7 @@
   background-color: lightgrey;
   display: grid;
   grid-template-columns: 5fr 2fr;
-  grid-template-rows: 50px 1fr 50px;
+  grid-template-rows: 50px 1fr calc(50px - 1rem);
 }
 
 #projects {
@@ -96,7 +96,7 @@
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   gap: 1rem;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
 }
 
 #project-title {
@@ -119,7 +119,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1.5fr 50px 1.5fr;
-  padding: 1rem 1rem 1rem 0;
+  padding: 0 1rem 1rem 0;
 }
 
 #trending-title {
