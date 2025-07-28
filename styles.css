@@ -198,3 +198,26 @@
 .announcement p {
   padding-top: 0.5rem;
 }
+
+.trending {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  font-size: 12px;
+  padding: 1rem;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user-info img {
+  height: 3rem;
+}
+
+.user-profile {
+  padding-left: 0.5rem;
+}
