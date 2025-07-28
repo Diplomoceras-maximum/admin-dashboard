@@ -183,12 +183,13 @@
 }
 
 .announcement {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto 1fr auto 1fr;
+  gap: 0.5rem;
   font-size: 12px;
   padding: 1rem;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .announcement hr {
