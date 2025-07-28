@@ -90,6 +90,115 @@
   grid-row: 1 / 2;
   grid-column: 2 / 3;
   background-color: var(--header-colour);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#header img {
+  height: 2.5rem;
+}
+
+#utility-bar {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+#function-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+#search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#search-bar img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+#search-bar div {
+  background-color: var(--background-colour);
+  height: 1.5rem;
+  width: 100%;
+  border: 0;
+  border-radius: 50px;
+}
+
+#user-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#user-controls > img:first-child {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+#user-data img {
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+
+#user-data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+}
+
+#user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+#user-details p:first-child {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#user-details p:last-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#user-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#user-content img {
+  height: 3.5rem;
+  margin-right: 1rem;
+}
+
+#button-options {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+#button-options button {
+  border: 0;
+  font-weight: bold;
+  background-color: var(--main-colour);
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  color: var(--navlink-colour);
+  cursor: pointer;
 }
 
 #main {
